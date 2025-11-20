@@ -147,3 +147,92 @@ body {
 .animate-bounce-horizontal {
   animation: bounce-horizontal 1.5s ease-in-out infinite;
 }
+
+/* Mac Calculator Styles */
+.calculator {
+  width: 320px;
+  background: #1c1c1c;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+  background: #000;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.display-text {
+  color: white;
+  font-size: 48px;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-number {
+  background: #333;
+  color: white;
+}
+
+.btn-number:hover {
+  background: #404040;
+}
+
+.btn-function {
+  background: #a6a6a6;
+  color: black;
+}
+
+.btn-function:hover {
+  background: #b8b8b8;
+}
+
+.btn-operator {
+  background: #ff9500;
+  color: white;
+}
+
+.btn-operator:hover {
+  background: #ffad33;
+}
+
+.btn-zero {
+  grid-column: span 2;
+  border-radius: 32px;
+  text-align: left;
+  padding-left: 24px;
+}
+
